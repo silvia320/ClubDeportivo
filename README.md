@@ -16,7 +16,7 @@ El diagrama está en `docs/modelo.puml` (PlantUML).
 
 ## Imagen Despliegue
 
-![Página home](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/images/captura.png)
-![Clubes](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/images/captura1.png)
-![Miembros](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/images/capura2.png)
-![Inscripsiones](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/images/capura3.png)
+![Página home](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/captura.png)
+![Clubes](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/captura1.png)
+![Miembros](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/capura2.png)
+![Inscripsiones](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/capura3.png)
