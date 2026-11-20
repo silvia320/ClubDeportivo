@@ -16,6 +16,7 @@ El diagrama está en `docs/modelo.puml` (PlantUML).
 
 ## Imagen Despliegue
 
-![Página home](../ClubDeportivo/docs/imagen/captura.png)
-![Clubes](../ClubDeportivo/docs/imagen/captura2.png)
-![Miembros](../ClubDeportivo/docs/imagen/captura3.png)
+![Página home](docs/images/captura.png)
+![Clubes](docs/images/captura1.png)
+![Miembros](docs/images/capura2.png)
+![Inscripsiones](docs/images/capura3.png)
