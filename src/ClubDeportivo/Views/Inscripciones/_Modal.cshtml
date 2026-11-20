@@ -1,0 +1,20 @@
+@model ClubDeportivo.Application.Dtos.InscripcionDto
+@{
+    var isNew = Model.Id == 0;
+    var formAction = isNew ? Url.Action("Create") : Url.Action("Edit", new { id = Model.Id });
+}
+
+<form action="@formAction" method="post">
+    @Html.AntiForgeryToken()
+    <div class="modal-header">
+        <h5 class="modal-title">@(isNew ? "Agregar" : "Editar") inscripción</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+    </div>
+    <div class="modal-body">
+        <partial name="_Form" model="Model" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+</form>

@@ -1,0 +1,33 @@
+@model ClubDeportivo.Application.Dtos.InscripcionDto
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="ClubId" class="form-label">Club</label>
+        <select asp-for="ClubId" asp-items="(SelectList)ViewBag.ClubItems" class="form-select">
+            <option value="0">-- Seleccione --</option>
+        </select>
+        <span asp-validation-for="ClubId" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="MiembroId" class="form-label">Miembro</label>
+        <select asp-for="MiembroId" asp-items="(SelectList)ViewBag.MiembroItems" class="form-select">
+            <option value="0">-- Seleccione --</option>
+        </select>
+        <span asp-validation-for="MiembroId" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="FechaInscripcion" class="form-label">Fecha de inscripción</label>
+        <input asp-for="FechaInscripcion" class="form-control" />
+        <span asp-validation-for="FechaInscripcion" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Estado" class="form-label">Estado</label>
+        <select asp-for="Estado" class="form-select">
+            <option value="A">Activa</option>
+            <option value="S">Suspendida</option>
+            <option value="I">Inactiva</option>
+        </select>
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+</div>

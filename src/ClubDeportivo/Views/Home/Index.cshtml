@@ -1,0 +1,42 @@
+@{ ViewData["Title"] = "Inicio"; }
+
+<div class="hero text-center mb-5">
+    <h1 class="display-4">ClubDeportivo</h1>
+    <p class="lead col-lg-7 mx-auto mb-4">
+        Gestión de clubes deportivos: clubes, miembros e inscripciones en un solo lugar.
+    </p>
+    <div class="d-flex gap-2 justify-content-center flex-wrap">
+        <a class="btn btn-light btn-lg px-4" asp-controller="Clubes" asp-action="Index">Ver clubes</a>
+        <a class="btn btn-outline-light btn-lg px-4" asp-controller="Inscripciones" asp-action="Index">Ver inscripciones</a>
+    </div>
+</div>
+
+<div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="col">
+        <a class="text-decoration-none text-reset" asp-controller="Clubes" asp-action="Index">
+            <div class="card feature-card h-100 text-center"><div class="card-body p-4">
+                <div class="feature-icon">&#127942;</div>
+                <h5 class="card-title">Clubes</h5>
+                <p class="card-text text-muted">Clubes deportivos registrados, con su deporte y ubicación.</p>
+            </div></div>
+        </a>
+    </div>
+    <div class="col">
+        <a class="text-decoration-none text-reset" asp-controller="Miembros" asp-action="Index">
+            <div class="card feature-card h-100 text-center"><div class="card-body p-4">
+                <div class="feature-icon">&#128101;</div>
+                <h5 class="card-title">Miembros</h5>
+                <p class="card-text text-muted">Personas que pueden inscribirse en uno o varios clubes.</p>
+            </div></div>
+        </a>
+    </div>
+    <div class="col">
+        <a class="text-decoration-none text-reset" asp-controller="Inscripciones" asp-action="Index">
+            <div class="card feature-card h-100 text-center"><div class="card-body p-4">
+                <div class="feature-icon">&#128221;</div>
+                <h5 class="card-title">Inscripciones</h5>
+                <p class="card-text text-muted">Registro de qué miembro pertenece a qué club, con su estado.</p>
+            </div></div>
+        </a>
+    </div>
+</div>

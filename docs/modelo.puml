@@ -1,0 +1,39 @@
+@startuml
+hide circle
+skinparam shadowing false
+skinparam linetype ortho
+
+entity "clubes" as Club {
+  * club_id : integer <<PK>>
+  --
+  * nombre : varchar(80)
+  * deporte : varchar(60)
+  * ubicacion : varchar(120)
+  * fecha_fundacion : date
+  ..
+  MiembrosActivos : calculado (no es columna)
+}
+
+entity "miembros" as Miembro {
+  * miembro_id : integer <<PK>>
+  --
+  * nombre : varchar(60)
+  * apellido : varchar(60)
+  * email : varchar(120)
+  * telefono : varchar(15)
+  ..
+  ClubesActivos : calculado (no es columna)
+}
+
+entity "inscripciones" as Inscripcion {
+  * inscripcion_id : integer <<PK>>
+  --
+  * club_id : integer <<FK>>
+  * miembro_id : integer <<FK>>
+  * fecha_inscripcion : date
+  * estado : varchar(1)
+}
+
+Club ||--o{ Inscripcion : "tiene"
+Miembro ||--o{ Inscripcion : "tiene"
+@enduml

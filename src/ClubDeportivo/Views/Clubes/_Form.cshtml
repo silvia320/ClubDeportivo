@@ -1,0 +1,25 @@
+@model ClubDeportivo.Application.Dtos.ClubDto
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Deporte" class="form-label">Deporte</label>
+        <input asp-for="Deporte" class="form-control" />
+        <span asp-validation-for="Deporte" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Ubicacion" class="form-label">Ubicación</label>
+        <input asp-for="Ubicacion" class="form-control" />
+        <span asp-validation-for="Ubicacion" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="FechaFundacion" class="form-label">Fecha de fundación</label>
+        <input asp-for="FechaFundacion" class="form-control" />
+        <span asp-validation-for="FechaFundacion" class="text-danger"></span>
+    </div>
+</div>
