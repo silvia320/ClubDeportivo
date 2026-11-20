@@ -13,3 +13,9 @@ El diagrama está en `docs/modelo.puml` (PlantUML).
 
 ## Migraciones nuevas
     .\scripts\migrations.ps1 -Name NombreMigracion
+
+## Imagen Despliegue
+![Pagina home](docs/images/captura.png)
+![Clubes](docs/images/captura1.png)
+![Miembros](docs/images/captura2.png)
+![Inscripciones](docs/images/captura3.png)
