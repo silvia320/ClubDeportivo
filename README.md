@@ -18,5 +18,5 @@ El diagrama está en `docs/modelo.puml` (PlantUML).
 
 ![Página home](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/captura.png)
 ![Clubes](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/captura1.png)
-![Miembros](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/capura2.png)
-![Inscripsiones](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/capura3.png)
+![Miembros](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/captura2.png)
+![Inscripsiones](https://raw.githubusercontent.com/silvia320/ClubDeportivo/main/docs/imagen/captura3.png)
